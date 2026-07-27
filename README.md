@@ -62,7 +62,7 @@ data/
 │
 ├── queries/
 │   ├── queries.jsonl              # Generated retrieval queries(5960 queries before cleaning)
-│   └── cleaned_queries.jsonl      # Cleaned queries with citations removed (5,731 queries used for further experiments all methods)
+│   └── cleaned_queries.jsonl      # Cleaned queries with citations removed (5,731 queries used for further experiments on all methods)
 │
 ├── valid_names.json               # Legal document names used during query extraction
 │
