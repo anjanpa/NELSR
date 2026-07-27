@@ -1,0 +1,15 @@
+.venv 
+*.docx 
+*.doc 
+*.json 
+*.Identifier
+*.pkl
+__pycache__/
+.claude 
+.codex 
+.agents 
+*.csv 
+*.gz
+*.zip
+*.pdf
+*.png
