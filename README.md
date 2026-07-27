@@ -15,7 +15,6 @@ The benchmark evaluates sparse, dense, late-interaction, and hybrid retrieval ap
 
 ---
 
-
 # Repository Structure
 
 ```text
@@ -43,7 +42,6 @@ NELSR/
 
 Note: The `chunk_generation` and `query_generation` directories contain the code used to construct the NELSR benchmark. The original legal documents and Supreme Court case documents used during data collection are not redistributed due to source restrictions. To reproduce the benchmark construction process, users need to obtain the original documents from their respective public sources and run the provided scripts. The released processed chunks and queries are sufficient to reproduce the retrieval experiments.
 
-
 # Dataset
 
 The released NELSR benchmark consists of:
@@ -63,8 +61,8 @@ data/
 │   └── chunks.jsonl              #Generated statute chunks used for retrieval experiments
 │
 ├── queries/
-│   ├── queries.jsonl              # Generated retrieval queries
-│   └── cleaned_queries.jsonl      # Cleaned queries with citations removed
+│   ├── queries.jsonl              # Generated retrieval queries(5960 queries before cleaning)
+│   └── cleaned_queries.jsonl      # Cleaned queries with citations removed (5,731 queries used for further experiments all methods)
 │
 ├── valid_names.json               # Legal document names used during query extraction
 │
@@ -135,7 +133,6 @@ Execute all cells sequentially to reproduce:
 GPU acceleration is recommended for dense and hybrid retrieval experiments.
 
 ---
-
 
 # Evaluation Metrics
 
